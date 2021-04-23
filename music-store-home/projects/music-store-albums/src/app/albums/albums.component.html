@@ -1,0 +1,55 @@
+<!--<gwc-loading></gwc-loading>-->
+
+<div>
+  <div style="display: inline-block; width: 30%; vertical-align: top; margin-top: 20px" *ngIf="!showLabels">
+    <div>
+      <select compact required >
+        <option value="">Select</option>
+        <option *ngFor="let item of format" [value]="item.value">{{item.text}}</option>
+      </select>
+    </div>
+    <div>
+      <select compact required>
+        <option value="">Select</option>
+        <option *ngFor="let item of genre" [value]="item.value">{{item.text}}</option>
+      </select>
+    </div>
+    <div>
+      <select compact required>
+        <option value="">Select</option>
+        <option *ngFor="let item of label" [value]="item.value">{{item.text}}</option>
+      </select>
+    </div>
+  </div>
+  <div style="display: inline-block; width: 70%">
+    <div class="grv-row grv-margin__top--tiny">
+      <a class="label-link" routerLink="/albums/pre-orders">Pre Orders</a>
+    </div>
+    <div>
+      <div style="display: inline-block; padding: 20px">
+        <div class="body">
+          <img src="../../assets/album1.png" width="200px" height="300px"/>
+        </div>
+        <span class="footer">
+            <a href="">Learn More</a>
+          </span>
+      </div>
+      <div style="display: inline-block; padding: 20px">
+        <div class="body">
+          <img src="../../assets/album2.png" width="200px" height="300px"/>
+        </div>
+        <span class="footer">
+            <a href="">Learn More</a>
+          </span>
+      </div>
+      <div style="display: inline-block; padding: 20px">
+        <div class="body">
+          <img src="../../assets/album3.png" width="200px" height="300px"/>
+        </div>
+        <span class="footer">
+            <a href="">Learn More</a>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>
